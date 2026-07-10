@@ -1,0 +1,272 @@
+/* --- Base Reset & Typography --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: #ff9838;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar a:last-child {
+    border-right: none;
+}
+
+.navbar a:hover {
+    background-color: #e68528;
+}
+
+/* --- Section Formatting --- */
+.section-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.section-title span {
+    font-weight: normal;
+    border-bottom: 2px solid #ff9838;
+    padding-bottom: 5px;
+}
+
+/* --- Card Grid Section --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* Flush alignment like the screenshot */
+}
+
+.card-item {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-item:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.card-badge {
+    color: #ff0000;
+    font-weight: bold;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+.card-text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-text h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.card-text p {
+    font-size: 11px;
+    color: #ccc;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://www.thebusinessdesk.com/_files/images/dec_22/Man-City-etihad-stadium-e1670850333543.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.light-text {
+    color: #fff !important;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.inline-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.inline-group label {
+    font-weight: normal;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 25px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn-submit {
+    background-color: #ff0000;
+}
+
+.btn-reset {
+    background-color: #ff0000;
+}
+
+/* --- Number Card Section --- */
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.number-box {
+    background-color: #0a0a45;
+    color: #ffffff;
+    padding: 30px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+.number-box h3 {
+    color: #ff9838;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.number-box p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #b0b0d0;
+}
+
+.box-num {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Highlight variation for card 01 */
+.number-box.highlight {
+    background-color: #ff9838;
+    color: #333;
+}
+
+.number-box.highlight h3 {
+    color: #000;
+}
+
+.number-box.highlight p {
+    color: #444;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #000000;
+    color: #777;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 60px;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .number-grid {
+        grid-template-columns: 1fr;
+    }
+}

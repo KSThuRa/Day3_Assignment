@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Assignment</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#cards">Card Section</a>
+        <a href="#contact">Contact Section</a>
+        <a href="#numbers">Number Card Section</a>
+    </nav>
+
+    <section id="cards" class="section-container">
+        <h2 class="section-title">Card <span>Section</span></h2>
+        <div class="card-grid">
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay">
+                    <span class="card-badge"></span>
+                    <div class="card-text">
+                        <h3>title 01</h3>
+                        <p>Lorem ipsum dolor sit amet...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay"><span class="card-badge"></span></div>
+            </div>
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay"><span class="card-badge"></span></div>
+            </div>
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay"><span class="card-badge"></span></div>
+            </div>
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay"><span class="card-badge"></span></div>
+            </div>
+            <div class="card-item" style="background-image: url('https://cdn.tvmnews.mt/wp-content/uploads/2023/06/10235327/manchester-city.jpg');">
+                <div class="card-overlay"><span class="card-badge"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title light-text" align="center">Contact <span>Section</span></h2>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+
+                <div class="form-group inline-group">
+                    <label>Gender:</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="male" checked> Male</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form-group inline-group">
+                    <label>Favorite Programming Language</label>
+                    <label class="checkbox-label"><input type="checkbox" value="html"> HTML</label>
+                    <label class="checkbox-label"><input type="checkbox" value="css"> CSS</label>
+                    <label class="checkbox-label"><input type="checkbox" value="js"> JavaScript</label>
+                    <label class="checkbox-label"><input type="checkbox" value="react"> React</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Choose a Color:</label>
+                    <select id="color">
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                    <button type="reset" class="btn btn-reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="numbers" class="section-container">
+        <h2 class="section-title">Number <span>Card</span> Section</h2>
+        <div class="number-grid">
+            <div class="number-box highlight">
+                <div class="box-num">01</div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ipsa possimus laborum quidem magnam</p>
+            </div>
+            <div class="number-box">
+                <div class="box-num">02</div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ipsa possimus laborum quidem magnam</p>
+            </div>
+            <div class="number-box">
+                <div class="box-num">03</div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ipsa possimus laborum quidem magnam</p>
+            </div>
+            <div class="number-box">
+                <div class="box-num">04</div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ipsa possimus laborum quidem magnam</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copy right...</p>
+    </footer>
+
+</body>
+</html>
